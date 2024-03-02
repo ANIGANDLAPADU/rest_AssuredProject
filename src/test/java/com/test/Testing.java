@@ -1,6 +1,7 @@
 package com.test;
 
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.github.javafaker.Faker;
@@ -9,7 +10,7 @@ import com.payload.User;
 
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
-
+@Listeners(com.utilities.ExtentReportManager.class)
 public class Testing {
 	public Faker faker;
 	public User payload;
