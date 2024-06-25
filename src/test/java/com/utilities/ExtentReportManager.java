@@ -32,7 +32,7 @@ public class ExtentReportManager implements ITestListener {
 
 		extent = new ExtentReports();
 		extent.attachReporter(sparkReporter);
-		extent.setSystemInfo("Application", "AutomationTesting");
+		extent.setSystemInfo("Application", "RestAssured");
 		extent.setSystemInfo("Operating System", System.getProperty("os.name"));
 		extent.setSystemInfo("User Name", System.getProperty("user.name"));
 		extent.setSystemInfo("Environemnt", "QA");

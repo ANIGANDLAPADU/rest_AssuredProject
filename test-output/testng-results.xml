@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-02T06:14:44 IST" name="Default suite" finished-at="2024-03-02T06:14:53 IST" duration-ms="9081">
+  <suite started-at="2024-06-20T16:51:52 IST" name="Suite" finished-at="2024-06-20T16:52:02 IST" duration-ms="10293">
     <groups>
     </groups>
-    <test started-at="2024-03-02T06:14:44 IST" name="Default test" finished-at="2024-03-02T06:14:53 IST" duration-ms="9081">
+    <test started-at="2024-06-20T16:51:52 IST" name="Test" finished-at="2024-06-20T16:52:02 IST" duration-ms="10293">
       <class name="com.test.Testing">
-        <test-method is-config="true" signature="data()[pri:0, instance:com.test.Testing@15bb5034]" started-at="2024-03-02T06:14:44 IST" name="data" finished-at="2024-03-02T06:14:44 IST" duration-ms="222" status="PASS">
+        <test-method is-config="true" signature="data()[pri:0, instance:com.test.Testing@4b741d6d]" started-at="2024-06-20T16:51:53 IST" name="data" finished-at="2024-06-20T16:51:53 IST" duration-ms="849" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- data -->
-        <test-method signature="Creating()[pri:1, instance:com.test.Testing@15bb5034]" started-at="2024-03-02T06:14:44 IST" name="Creating" finished-at="2024-03-02T06:14:48 IST" duration-ms="3751" status="PASS">
+        <test-method signature="Creating()[pri:1, instance:com.test.Testing@4b741d6d]" started-at="2024-06-20T16:51:53 IST" name="Creating" finished-at="2024-06-20T16:51:58 IST" duration-ms="4156" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Creating -->
-        <test-method signature="Getting()[pri:2, instance:com.test.Testing@15bb5034]" started-at="2024-03-02T06:14:48 IST" name="Getting" finished-at="2024-03-02T06:14:50 IST" duration-ms="1894" status="PASS">
+        <test-method signature="Getting()[pri:2, instance:com.test.Testing@4b741d6d]" started-at="2024-06-20T16:51:58 IST" name="Getting" finished-at="2024-06-20T16:51:59 IST" duration-ms="1563" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Getting -->
-        <test-method signature="update()[pri:3, instance:com.test.Testing@15bb5034]" started-at="2024-03-02T06:14:50 IST" name="update" finished-at="2024-03-02T06:14:51 IST" duration-ms="1186" status="PASS">
+        <test-method signature="update()[pri:3, instance:com.test.Testing@4b741d6d]" started-at="2024-06-20T16:51:59 IST" name="update" finished-at="2024-06-20T16:52:01 IST" duration-ms="1606" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- update -->
-        <test-method signature="delete()[pri:4, instance:com.test.Testing@15bb5034]" started-at="2024-03-02T06:14:51 IST" name="delete" finished-at="2024-03-02T06:14:53 IST" duration-ms="1596" status="PASS">
+        <test-method signature="delete()[pri:4, instance:com.test.Testing@4b741d6d]" started-at="2024-06-20T16:52:01 IST" name="delete" finished-at="2024-06-20T16:52:02 IST" duration-ms="1616" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- delete -->
       </class> <!-- com.test.Testing -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

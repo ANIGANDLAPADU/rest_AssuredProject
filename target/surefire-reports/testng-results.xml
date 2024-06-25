@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-22T17:34:07 IST" name="Surefire suite" finished-at="2024-03-22T17:34:17 IST" duration-ms="9625">
+    <groups>
+    </groups>
+    <test started-at="2024-03-22T17:34:07 IST" name="Surefire test" finished-at="2024-03-22T17:34:17 IST" duration-ms="9625">
+      <class name="com.test.Testing">
+        <test-method is-config="true" signature="data()[pri:0, instance:com.test.Testing@223aa2f7]" started-at="2024-03-22T17:34:08 IST" name="data" finished-at="2024-03-22T17:34:08 IST" duration-ms="257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- data -->
+        <test-method signature="Creating()[pri:1, instance:com.test.Testing@223aa2f7]" started-at="2024-03-22T17:34:08 IST" name="Creating" finished-at="2024-03-22T17:34:12 IST" duration-ms="4101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Creating -->
+        <test-method signature="Getting()[pri:2, instance:com.test.Testing@223aa2f7]" started-at="2024-03-22T17:34:12 IST" name="Getting" finished-at="2024-03-22T17:34:14 IST" duration-ms="1840" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Getting -->
+        <test-method signature="update()[pri:3, instance:com.test.Testing@223aa2f7]" started-at="2024-03-22T17:34:14 IST" name="update" finished-at="2024-03-22T17:34:16 IST" duration-ms="1572" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update -->
+        <test-method signature="delete()[pri:4, instance:com.test.Testing@223aa2f7]" started-at="2024-03-22T17:34:16 IST" name="delete" finished-at="2024-03-22T17:34:17 IST" duration-ms="1466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete -->
+      </class> <!-- com.test.Testing -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

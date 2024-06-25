@@ -24,7 +24,7 @@ public class DataProviders {
 		{
 			for (int j = 0; j < totalcols; j++) // 0 i is rows j is col
 			{
-				apidata[i - 1][j] = xlutil.getCellData("Sheet1", i, j); // 1,0
+				apidata[i-1][j] = xlutil.getCellData("Sheet1", i, j); // 1,0
 			}
 		}
 		return apidata;// returning two dimension array
@@ -49,6 +49,21 @@ public class DataProviders {
 		return apidata;
 	}
 	// DataProvider 3
+	@DataProvider(name = "FirstName")
+	public String[] getFirstName() throws IOException {
+		String path = System.getProperty("user.dir") + "//testData//Userdata.xlsx";
+		ExcelUtility xl = new ExcelUtility(path);
 
+		int rownum = xl.getRowCount("Sheet1");
+
+		String apidata[] = new String[rownum];
+
+		for (int i = 1; i <= rownum; i++) {
+			apidata[i - 1] = xl.getCellData("Sheet1", i, 4);
+
+		}
+
+		return apidata;
+	}
 	// DataProvider 4
 }

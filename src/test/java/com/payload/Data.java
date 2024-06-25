@@ -19,7 +19,7 @@ public class Data {
   }
   public static Response GetUser(String username) {
 		 Response response=given()
-		 .pathParam("username", username)
+		 .pathParam("username",username)
 		  .when()
 		  .get(Routers.get_url);
 		return response;
@@ -37,7 +37,7 @@ public class Data {
   }
   public static Response deleteUser(String username) {
 		 Response response=given()
-		 .pathParam("username", username)
+		 .pathParam("username",username)
 		  .when()
 		  .get(Routers.delete_url);
 		return response;

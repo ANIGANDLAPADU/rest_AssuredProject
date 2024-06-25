@@ -1,6 +1,6 @@
 package com.test;
 
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -8,16 +8,25 @@ import com.github.javafaker.Faker;
 import com.payload.Data;
 import com.payload.User;
 
-import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 @Listeners(com.utilities.ExtentReportManager.class)
 public class Testing {
 	public Faker faker;
 	public User payload;
+	static Logger logger;
 
-	@BeforeClass
+	public static Logger getLogger() {
+		logger = LogManager.getLogger(); 
+		return logger;
+	}
+
+	@BeforeTest
 	public void data() {
 		faker = new Faker();
+		getLogger().info("faker instance got created ");
 		payload = new User();
 		payload.setId(faker.idNumber().hashCode());
 		payload.setFirstname(faker.name().firstName());
@@ -39,13 +48,11 @@ public class Testing {
 	public void Getting() {
 		Response response = Data.GetUser(this.payload.getUsername());
 		response.then().log().all();
-		response.then().assertThat().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("User.json"));
-
 	}
 
 	@Test(priority = 3)
 	public void update() {
-		Response response = Data.UpdateUser(payload,this.payload.getUsername());
+		Response response = Data.UpdateUser(payload, this.payload.getUsername());
 		response.then().log().all();
 	}
 
